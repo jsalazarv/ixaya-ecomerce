@@ -17,7 +17,6 @@ export const Products = () => {
     fetchProducts();
   }, []);
 
-  console.log(productList);
   return (
     <>
       <h1>Products</h1>
