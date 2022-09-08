@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner {
+    @apply m-4;
+    @apply overflow-hidden;
+    @apply rounded-3xl;
+    @apply flex;
+    @apply justify-center;
+    height: 75vh;
+    background: linear-gradient(90deg, #9A9A9A 0%, #E5E5E5 50%);
+}
+
+.banner__content{
+    @apply pt-9;
+}
+
+.banner__content__title {
+    @apply font-extrabold;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.banner__content__subtitle {
+    @apply font-extrabold;
+    @apply text-black;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.banner__content__brand {
+    @apply font-extrabold;
+    @apply text-black;
+    font-size: 1rem;
+}
+
+.banner__content__image {
+    width: 24rem;
+    position: absolute;
+    left: 2rem;
+    top: 13rem;
+    transform: translate(-50%, -50%);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .banner {
+        @apply m-5;
+        @apply items-center;
+        height: 40vh;
+    }
+    .banner__content{
+        @apply pt-0;
+    }
+
+    .banner__content__title {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    .banner__content__subtitle {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    .banner__content__brand {
+        font-size: 2rem;
+    }
+
+    .banner__content__image {
+        width: 25rem;
+        position: absolute;
+        left: 20rem;
+        top: 6rem;
+        transform: translate(-50%, -50%);
+        animation: float 4s ease-in-out infinite;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        @apply m-6;
+        height: 90vh;
+    }
+
+    .banner__content__title {
+        font-size: 8rem;
+        line-height: 10rem;
+    }
+
+    .banner__content__subtitle {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .banner__content__brand {
+        font-size: 2rem;
+    }
+
+    .banner__content__image {
+        width: 35rem;
+        position: absolute;
+        left: 18rem;
+        top: 4rem;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .banner__content__title {
+        font-size: 10em;
+        line-height: 12rem;
+    }
+    .banner__content__image {
+        width: 45rem;
+        position: absolute;
+        left: 30rem;
+        top: 1rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .banner {
+        height: 90vh;
+    }
+    .banner__content__title {
+        font-size: 12em;
+        line-height: 14rem;
+    }
+    .banner__content__subtitle {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .banner__content__brand {
+        font-size: 3rem;
+    }
+    .banner__content__image {
+        width: 50rem;
+        position: absolute;
+        left: 30rem;
+        top: 5rem;
+    }
+}

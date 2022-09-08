@@ -4,13 +4,16 @@
 
 .card {
     @apply flex-shrink-0;
-    @apply m-6;
+    @apply mx-6;
+    @apply my-2;
     @apply relative;
     @apply overflow-hidden;
     @apply bg-purple-700;
-    @apply rounded-2xl;
-    @apply max-w-xs;
+    @apply rounded-3xl;
     @apply shadow-lg;
+    @apply border-2;
+    min-height: 18rem;
+    height: 18rem;
 }
 
 .card__header {
@@ -24,7 +27,7 @@
 
 .card__header__image {
     @apply relative;
-    @apply w-40;
+    height: 100px;
 }
 
 .card__content {
@@ -63,4 +66,29 @@
     @apply leading-none;
     @apply flex;
     @apply items-center;
+}
+
+
+.bg_gradient_graphite {
+    @apply bg-gradient-to-r from-zinc-900 to-zinc-700
+}
+
+.bg_gradient_honey {
+    @apply bg-gradient-to-r from-amber-500 to-amber-300
+}
+
+.bg_gradient_strawberry {
+    @apply bg-gradient-to-r from-red-600 to-red-400
+}
+
+.bg_gradient_shark {
+    @apply bg-gradient-to-r from-neutral-400 to-neutral-200
+}
+
+.bg_gradient_lime {
+    @apply bg-gradient-to-r from-green-500 to-green-300
+}
+
+.bg_gradient_sky {
+    @apply bg-gradient-to-r from-blue-600 to-blue-400
 }

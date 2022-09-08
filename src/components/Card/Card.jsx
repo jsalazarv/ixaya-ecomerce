@@ -1,9 +1,15 @@
-export const Card = ({ image = '', category, title, price }) => {
+export const Card = ({
+  image = '',
+  category,
+  title,
+  price,
+  color = 'bg_gradient_shark',
+}) => {
   return (
     <>
-      <div className="card">
+      <div className={`card ${color}`}>
         <div className="card__header">
-          <img className="card__header__image" src={image} alt="" />
+          <img className="card_header_image" src={image} alt="" />
         </div>
         <div className="card__content">
           <span className="card__content_category">{category}</span>
