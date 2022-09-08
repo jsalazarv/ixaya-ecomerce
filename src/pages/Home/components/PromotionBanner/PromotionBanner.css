@@ -2,24 +2,23 @@
     @apply bg-red-100;
     @apply rounded-3xl;
     @apply p-16;
-    @apply flex;
     @apply m-6;
-    flex: 1;
     justify-content: space-between;
-    margin-top: 13rem;
+    margin-top: 5rem;
 }
 
 .promotion-banner__title {
     @apply text-white;
     @apply font-extrabold;
-    @apply text-8xl;
+    @apply text-3xl;
     @apply my-4;
-    flex: 0.5;
+    flex: 1;
 }
 
 .promotion-banner__description {
     @apply text-white;
-    flex: 0.4;
+    @apply mt-6;
+    flex: 1;
 }
 
 .description__title {
@@ -33,8 +32,62 @@
 }
 
 .promotion-banner__image {
-    width: 30rem;
+    width: 13rem;
     position: absolute;
-    left: 45rem;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, -275%);
+}
+
+@media (min-width: 768px) {
+    .promotion-banner__title {
+        @apply text-3xl;
+    }
+    .promotion-banner__description {
+        @apply mt-9;
+    }
+    .promotion-banner__image {
+        width: 18rem;
+        left: 25%;
+        transform: translate(50%, -160%);
+    }
+}
+@media (min-width: 1024px) {
+    .promotion-banner {
+        @apply flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+    .promotion-banner__title {
+        @apply text-4xl;
+    }
+    .promotion-banner__description {
+        @apply mt-0;
+        flex: 1.2;
+    }
+    .promotion-banner__image {
+        width: 15rem;
+        left: 33%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (min-width: 1280px) {
+    .promotion-banner {
+        margin-top: 9rem;
+    }
+    .promotion-banner__title {
+        @apply text-5xl;
+    }
+
+    .promotion-banner__image {
+        width: 20rem;
+    }
+
+
+}
+@media (min-width: 1536px) {
+    .promotion-banner__title {
+        @apply text-6xl;
+    }
+    .promotion-banner__image {
+        width: 22rem;
+    }
 }

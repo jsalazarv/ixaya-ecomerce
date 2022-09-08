@@ -9,7 +9,7 @@
     @apply relative;
     @apply overflow-hidden;
     @apply bg-purple-700;
-    @apply rounded-2xl;
+    @apply rounded-3xl;
     @apply shadow-lg;
     @apply border-2;
     min-height: 18rem;
