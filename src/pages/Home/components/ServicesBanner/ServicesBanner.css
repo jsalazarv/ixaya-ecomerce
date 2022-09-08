@@ -1,0 +1,27 @@
+.services-banner {
+    @apply mx-5;
+    @apply my-6;
+    @apply flex;
+}
+
+.services-banner__benefit {
+    @apply text-gray-400;
+    @apply flex;
+    @apply items-center;
+    @apply w-full md:w-1/2 lg:w-1/4;
+}
+
+.benefit__icon {
+    @apply text-red-400;
+    @apply text-5xl;
+}
+
+.benefit__description {
+    @apply ml-4;
+}
+
+.benefit__title {
+    @apply font-extrabold;
+    @apply text-black;
+    @apply text-3xl;
+}

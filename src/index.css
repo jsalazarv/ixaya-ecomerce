@@ -1,4 +1,5 @@
 @import "pages/Home/components/Banner/Banner.css";
+@import "pages/Home/components/ServicesBanner/ServicesBanner.css";
 @import "components/Card/Card.css";
 
 @tailwind base;

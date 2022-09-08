@@ -19,16 +19,23 @@ export const Products = () => {
 
   return (
     <>
-      <h1>Products</h1>
-      {productList.map((product) => (
-        <Card
-          key={product.id}
-          image={product.image_url}
-          category={product.category}
-          title={product.title}
-          price={`$\`${product.price}\``}
-        />
-      ))}
+      <div className="mb-8 p-2 w-full flex flex-wrap bg-grey-light">
+        {productList.map((product) => (
+          <div
+            key={product.id}
+            className={`border-8 w-full md:w-1/2 
+            ${product.id % 3 === 0 ? 'lg:w-1/2' : 'lg:w-1/4'}
+            ${product.id === 4 ? 'lg:w-1/2' : 'lg:w-1/4'}
+            `}>
+            <Card
+              image={product.image_url}
+              category={product.category}
+              title={product.title}
+              price={`$\`${product.price}\``}
+            />
+          </div>
+        ))}
+      </div>
     </>
   );
 };
