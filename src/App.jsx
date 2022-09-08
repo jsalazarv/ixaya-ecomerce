@@ -1,10 +1,9 @@
 import './App.css';
-import { Products } from './pages/Products/Products';
 
 function App() {
   return (
     <div className="App">
-      <Products />
+      <h1>Ixaya Ecommerce</h1>
     </div>
   );
 }
