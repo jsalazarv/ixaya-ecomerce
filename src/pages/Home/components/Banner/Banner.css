@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner {
+    @apply m-6;
+    @apply overflow-hidden;
+    @apply rounded-3xl;
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+    height: 90vh;
+    background: linear-gradient(90deg, #9A9A9A 0%, #E5E5E5 50%);
+}
+
+.banner__content__title {
+    @apply font-extrabold;
+    font-size: 13rem;
+    line-height: 12rem;
+}
+
+.banner__content__subtitle {
+    @apply font-extrabold;
+    @apply text-black;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.banner__content__brand {
+    @apply font-extrabold;
+    @apply text-black;
+    font-size: 2rem;
+}
+
+.banner__content__image {
+    width: 50rem;
+    position: absolute;
+    left: 35rem;
+    top: 5rem;
+    transform: translate(-50%, -50%);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}

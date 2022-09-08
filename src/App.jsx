@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home/Home';
 import { Products } from './pages/Products/Products';
 import { Orders } from './pages/Orders/Orders';
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Products />} />
+        <Route path="/" element={<Home />} />
         <Route path="/orders" element={<Orders />} />
       </Routes>
     </BrowserRouter>
