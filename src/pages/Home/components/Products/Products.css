@@ -1,0 +1,11 @@
+.row-left .item, .row-right .item {
+    @apply lg:w-1/4;
+}
+
+.row-left .item:first-child {
+    @apply lg:w-1/2;
+}
+
+.row-right  .item:last-child {
+    @apply lg:w-1/2;
+}

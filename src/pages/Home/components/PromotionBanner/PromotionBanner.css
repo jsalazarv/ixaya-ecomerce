@@ -1,0 +1,40 @@
+.promotion-banner {
+    @apply bg-red-100;
+    @apply rounded-3xl;
+    @apply p-16;
+    @apply flex;
+    @apply m-6;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: 13rem;
+}
+
+.promotion-banner__title {
+    @apply text-white;
+    @apply font-extrabold;
+    @apply text-8xl;
+    @apply my-4;
+    flex: 0.5;
+}
+
+.promotion-banner__description {
+    @apply text-white;
+    flex: 0.4;
+}
+
+.description__title {
+    @apply font-extrabold;
+    @apply text-4xl;
+}
+
+.description__subtitle {
+    @apply font-extrabold;
+    @apply text-2xl;
+}
+
+.promotion-banner__image {
+    width: 30rem;
+    position: absolute;
+    left: 45rem;
+    transform: translate(-50%, -50%);
+}

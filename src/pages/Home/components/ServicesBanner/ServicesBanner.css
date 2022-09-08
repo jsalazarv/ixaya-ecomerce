@@ -2,6 +2,7 @@
     @apply mx-5;
     @apply my-6;
     @apply flex;
+    @apply m-6;
 }
 
 .services-banner__benefit {
