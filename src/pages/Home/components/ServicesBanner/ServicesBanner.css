@@ -3,13 +3,17 @@
     @apply my-6;
     @apply flex;
     @apply m-6;
+    @apply grid;
+    @apply gap-y-6;
+    @apply grid-cols-1;
 }
 
 .services-banner__benefit {
     @apply text-gray-400;
     @apply flex;
     @apply items-center;
-    @apply w-full md:w-1/2 lg:w-1/4;
+    @apply w-full;
+    @apply px-5;
 }
 
 .benefit__icon {
@@ -24,5 +28,26 @@
 .benefit__title {
     @apply font-extrabold;
     @apply text-black;
-    @apply text-3xl;
+    @apply text-2xl;
+}
+
+@media (min-width: 768px) {
+    .services-banner {
+        @apply gap-y-9;
+        @apply grid-cols-2;
+    }
+
+}
+@media (min-width: 1024px) {
+    .services-banner {
+        @apply gap-y-0;
+        @apply grid-cols-4;
+        @apply my-16;
+    }
+}
+@media (min-width: 1280px) {
+
+}
+@media (min-width: 1536px) {
+
 }

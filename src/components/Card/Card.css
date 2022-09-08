@@ -4,13 +4,16 @@
 
 .card {
     @apply flex-shrink-0;
-    @apply m-6;
+    @apply mx-6;
+    @apply my-2;
     @apply relative;
     @apply overflow-hidden;
     @apply bg-purple-700;
     @apply rounded-2xl;
-    @apply max-w-xs;
     @apply shadow-lg;
+    @apply border-2;
+    min-height: 18rem;
+    height: 18rem;
 }
 
 .card__header {
@@ -24,7 +27,7 @@
 
 .card__header__image {
     @apply relative;
-    @apply w-40;
+    height: 100px;
 }
 
 .card__content {

@@ -21,14 +21,12 @@ export const Products = () => {
 
   return (
     <>
-      <div className="mb-8 p-2 w-full flex flex-col">
+      <div className="mb-8 flex flex-col">
         {productList.map((row, index) => {
           const isPar = index % 2 === 0;
           const rowClass = isPar ? 'row-right' : 'row-left';
           return (
-            <div
-              key={index}
-              className={`mb-8 p-2 w-full flex flex-wrap bg-grey-light ${rowClass}`}>
+            <div key={index} className={`w-full flex flex-wrap ${rowClass}`}>
               {row.map((product, index) => (
                 <div key={product.id} className={`w-full item`}>
                   <Card
