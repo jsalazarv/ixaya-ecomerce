@@ -7,7 +7,7 @@
     @apply rounded-3xl;
     @apply flex;
     @apply justify-center;
-    margin: 0.5rem;
+    @apply mt-0;
     height: 75vh;
     background: linear-gradient(90deg, #9A9A9A 0%, #E5E5E5 50%);
 }
@@ -36,7 +36,7 @@
 }
 
 .banner__content__image {
-    width: 19rem;
+    width: 15rem;
     position: absolute;
     left: 1rem;
     top: 19rem;
@@ -59,8 +59,8 @@
 
 @media (min-width: 768px) {
     .banner {
-        @apply m-5;
         @apply items-center;
+        @apply mx-0;
         height: 40vh;
     }
     .banner__content{
@@ -92,7 +92,9 @@
 
 @media (min-width: 1024px) {
     .banner {
-        @apply m-6;
+        @apply mx-6;
+        @apply mb-6;
+        @apply mt-0;
         height: 90vh;
     }
 

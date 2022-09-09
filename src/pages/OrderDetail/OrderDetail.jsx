@@ -36,7 +36,7 @@ export const OrderDetail = () => {
 
   return (
     <>
-      <div className="wrap">
+      <div className="wrap wrap-margin">
         <h1 className="text-3xl">Order details: {orderDetail.order_code}</h1>
 
         <div className="order-details">

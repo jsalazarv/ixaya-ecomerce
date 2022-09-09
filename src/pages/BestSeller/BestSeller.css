@@ -1,21 +1,27 @@
-    .bestseller__content{
-        @apply overflow-x-auto;
-        @apply my-4;
-    }
+.bestseller__content {
+    @apply overflow-x-auto;
+    @apply my-4;
+}
+
+.bestseller__banner {
+    @apply mb-5;
+    @apply mt-12;
+    @apply text-gray-400;
+    @apply text-center;
+}
+
+.bestseller__title{
+    @apply flex;
+    @apply justify-center;
+    @apply text-black;
+    @apply font-extrabold;
+    @apply text-4xl;
+    @apply mt-4;
+}
+
 @media (min-width: 768px) {
-    .bestseller__banner{
-        @apply mb-5;
-        @apply mt-12;
-        @apply text-gray-400;
-        @apply text-center;
-    }
     .bestseller__title{
-        @apply flex;
-        @apply justify-center;
-        @apply text-black;
-        @apply font-extrabold;
         @apply text-5xl;
-        @apply mt-4;
     }
     .bestseller__content .card {
         min-height: 22rem;
