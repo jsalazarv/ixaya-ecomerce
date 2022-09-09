@@ -10,20 +10,19 @@ export const Card = ({
   return (
     <>
       <div className={`card ${color}`}>
-        <button className="card__content_info_price" onClick={onClickAdd}>
-          AddItem
-        </button>
-        <button className="card__content_info_price" onClick={onClickRemove}>
-          removeItem
-        </button>
         <div className="card__header">
-          <img className="card_header_image" src={image} alt="" />
+          <img className="card__header__image" src={image} alt="" />
         </div>
         <div className="card__content">
           <span className="card__content_category">{category}</span>
           <div className="card__content_info">
             <span className="card__content_info_title">{title}</span>
+          </div>
+          <div className="button">
             <span className="card__content_info_price">{price}</span>
+            <button className="card__content_info_price" onClick={onClickAdd}>
+              Buy
+            </button>
           </div>
         </div>
       </div>

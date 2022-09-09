@@ -9,3 +9,13 @@
 .row-right  .item:last-child {
     @apply lg:w-1/2;
 }
+
+/*Cards lg*/
+
+.row-left .item:first-child .card {
+    display: flex;
+}
+
+.row-right  .item:last-child .card {
+    display: flex;
+}

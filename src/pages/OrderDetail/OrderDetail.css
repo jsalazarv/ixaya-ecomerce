@@ -1,10 +1,14 @@
-.login{
-    @apply block;
+.order-details {
+    @apply my-12;
 }
+
 @media (min-width: 768px) {
-    .login{
-        @apply hidden;
+    .order-details {
+        @apply flex;
+        @apply justify-between;
+        flex: 0.5;
     }
+
 }
 @media (min-width: 1024px) {
 

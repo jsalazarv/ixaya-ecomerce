@@ -1,0 +1,5 @@
+.form-control {
+    @apply relative;
+    @apply my-4;
+    @apply w-full;
+}

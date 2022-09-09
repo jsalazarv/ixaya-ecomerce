@@ -8,4 +8,8 @@ export class OrderService extends BaseService {
   async fetchOrderDetail(payload) {
     return this.client.post('/orders/detail', payload);
   }
+
+  async createOrder(payload) {
+    return this.client.post('/orders/create', payload);
+  }
 }

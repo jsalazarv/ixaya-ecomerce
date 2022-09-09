@@ -12,22 +12,29 @@
     @apply rounded-3xl;
     @apply shadow-lg;
     @apply border-2;
-    min-height: 18rem;
-    height: 18rem;
+    min-height: 22rem;
 }
 
 .card__header {
-    @apply relative;
     @apply pt-10;
     @apply px-10;
     @apply flex;
     @apply items-center;
     @apply justify-center;
+    height: 200px;
+    @apply items-center;
+}
+
+.button{
+    @apply p-4;
+    @apply flex;
+    @apply justify-between;
 }
 
 .card__header__image {
     @apply relative;
-    height: 100px;
+    height: 180px;
+    width: auto;
 }
 
 .card__content {
