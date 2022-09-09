@@ -1,0 +1,98 @@
+.input-container {
+    @apply mb-4;
+    @apply flex;
+    @apply justify-between;
+    @apply items-center;
+    @apply m-4;
+}
+
+.input {
+    @apply w-full;
+    @apply pl-10;
+    @apply pr-4;
+    @apply py-2;
+    @apply rounded-full;
+    @apply shadow;
+    @apply focus:outline-none;
+    @apply text-gray-600;
+    @apply font-medium;
+    @apply bg-gray-100;
+    height: 3.5rem;
+}
+
+.input__icon {
+    @apply absolute;
+    @apply top-0;
+    @apply left-0;
+    @apply inline-flex;
+    @apply items-center;
+    @apply p-2;
+    @apply px-5;
+    @apply text-gray-500;
+    height: 100%;
+}
+
+.orders-container {
+    @apply overflow-x-auto;
+    @apply relative;
+    @apply m-4;
+    @apply rounded-3xl;
+    @apply flex;
+    @apply justify-center;
+}
+
+.table {
+    @apply w-full;
+    @apply text-sm;
+    @apply text-left;
+    @apply text-gray-500;
+}
+
+.table__head {
+    @apply text-xs;
+    @apply text-gray-700;
+    @apply uppercase;
+    @apply bg-gray-200;
+}
+
+.table__body__tr {
+    @apply bg-white;
+    @apply border-b;
+    @apply bg-gray-100;
+    @apply border-gray-200;
+}
+
+.table__body__tr__td {
+    @apply py-4;
+    @apply px-6;
+    @apply font-medium;
+    @apply text-gray-900;
+    @apply whitespace-nowrap;
+}
+
+.table__body__tr__td__total {
+    @apply text-gray-800;
+    @apply font-bold;
+}
+
+.table__body__tr__td__paid {
+    @apply text-white;
+    @apply font-medium;
+    @apply rounded-full;
+    @apply text-sm;
+    @apply p-2.5;
+    @apply text-center;
+    @apply inline-flex;
+    @apply items-center;
+    @apply mr-2;
+}
+
+.table__body__tr__td__button {
+    @apply px-4;
+    @apply py-2;
+    @apply text-white;
+    @apply bg-gray-600;
+    @apply rounded-md;
+    @apply shadow;
+    @apply hover:bg-gray-800;
+}

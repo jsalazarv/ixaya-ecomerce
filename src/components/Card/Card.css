@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply flex-shrink-0;
+    @apply mx-6;
+    @apply my-2;
+    @apply relative;
+    @apply overflow-hidden;
+    @apply bg-purple-700;
+    @apply rounded-3xl;
+    @apply shadow-lg;
+    @apply border-2;
+    min-height: 18rem;
+    height: 18rem;
+}
+
+.card__header {
+    @apply relative;
+    @apply pt-10;
+    @apply px-10;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+}
+
+.card__header__image {
+    @apply relative;
+    height: 100px;
+}
+
+.card__content {
+    @apply relative;
+    @apply text-white;
+    @apply px-6;
+    @apply pb-6 mt-6;
+}
+
+.card__content_category {
+    @apply block;
+    @apply opacity-75;
+    @apply -mb-1;
+}
+
+.card__content_info {
+    @apply flex;
+    @apply justify-between;
+}
+
+.card__content_info_title {
+    @apply block;
+    @apply font-semibold;
+    @apply text-xl;
+}
+
+.card__content_info_price {
+    @apply block;
+    @apply bg-white;
+    @apply rounded-full;
+    @apply text-orange-500;
+    @apply text-xs;
+    @apply font-bold;
+    @apply px-3;
+    @apply py-2;
+    @apply leading-none;
+    @apply flex;
+    @apply items-center;
+}
+
+
+.bg_gradient_graphite {
+    @apply bg-gradient-to-r from-zinc-900 to-zinc-700
+}
+
+.bg_gradient_honey {
+    @apply bg-gradient-to-r from-amber-500 to-amber-300
+}
+
+.bg_gradient_strawberry {
+    @apply bg-gradient-to-r from-red-600 to-red-400
+}
+
+.bg_gradient_shark {
+    @apply bg-gradient-to-r from-neutral-400 to-neutral-200
+}
+
+.bg_gradient_lime {
+    @apply bg-gradient-to-r from-green-500 to-green-300
+}
+
+.bg_gradient_sky {
+    @apply bg-gradient-to-r from-blue-600 to-blue-400
+}
