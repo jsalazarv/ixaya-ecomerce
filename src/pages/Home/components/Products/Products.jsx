@@ -42,7 +42,7 @@ export const Products = () => {
 
   return (
     <>
-      <div className="mb-8 p-2 w-full flex flex-col">
+      <div className="mb-8 w-full flex flex-col">
         {productList.map((row, index) => {
           const isPar = index % 2 === 0;
           const rowClass = isPar ? 'row-right' : 'row-left';
@@ -60,7 +60,8 @@ export const Products = () => {
                       image={product.image_url}
                       category={product.category}
                       title={product.title}
-                      price={`$\`${product.price}\``}
+                      price={product.price}
+                      description={product.short_description}
                       onClickAdd={() => dispatch(addItem(product))}
                       onClickRemove={() => dispatch(removeItem(product))}
                     />
