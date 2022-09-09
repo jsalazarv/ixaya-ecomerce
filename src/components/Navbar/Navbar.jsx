@@ -72,7 +72,7 @@ export const Navbar = () => {
           </div>
         </div>
         <div className="hidden space-x-2 md:inline-block flex items-center">
-          <a href="">
+          <a href="/checkout">
             <FontAwesomeIcon
               className="text-black text-2xl mr-4"
               icon={faCartShopping}
