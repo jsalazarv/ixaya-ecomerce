@@ -21,4 +21,5 @@
 
 body {
   @apply bg-white;
+  @apply text-black;
 }

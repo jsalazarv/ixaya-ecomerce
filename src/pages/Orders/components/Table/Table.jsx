@@ -6,11 +6,13 @@ import {
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
 
 const orderService = new OrderService();
 export const Table = () => {
   const [orderList, setOrderList] = useState([]);
   const [filteredList, setFilteredList] = useState([]);
+  const navigate = useNavigate();
 
   const fetchOrders = async () => {
     const {
@@ -31,6 +33,10 @@ export const Table = () => {
     );
 
     setFilteredList(newList);
+  };
+
+  const detail = (id) => {
+    navigate(`/orders/${id}`);
   };
 
   return (
@@ -93,7 +99,9 @@ export const Table = () => {
                     )}
                   </td>
                   <td className="py-4 px-6">
-                    <button className="table__body__tr__td__button">
+                    <button
+                      className="table__body__tr__td__button"
+                      onClick={() => detail(order.id)}>
                       View
                     </button>
                   </td>
