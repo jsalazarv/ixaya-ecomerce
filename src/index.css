@@ -7,6 +7,7 @@
 @import "pages/OrderDetail/OrderDetail.css";
 @import "components/ProductItem/ProductItem.css";
 @import "components/BillingDetails/BillingDetails.css";
+@import "pages/Checkout/Checkout.css";
 
 @tailwind base;
 @tailwind components;
@@ -16,4 +17,13 @@
 body {
   @apply bg-white;
   @apply text-black;
+}
+
+
+.button {
+  @apply focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2;
+}
+
+.button-honey {
+  @apply text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-600;
 }

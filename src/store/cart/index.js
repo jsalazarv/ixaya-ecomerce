@@ -49,9 +49,14 @@ const authSlice = createSlice({
         state.items = [...state.items];
       }
     },
+
+    clearCart: (state) => {
+      state.items = [];
+    },
   },
 });
 
-export const { addItem, removeItem, deleteCheckoutItem } = authSlice.actions;
+export const { addItem, removeItem, deleteCheckoutItem, clearCart } =
+  authSlice.actions;
 
 export default authSlice.reducer;
