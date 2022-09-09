@@ -2,6 +2,7 @@ import { OrderService } from '../../../../services/OrderService.js';
 import { useEffect, useState } from 'react';
 import {
   faCheck,
+  faClock,
   faMagnifyingGlass,
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
@@ -41,75 +42,89 @@ export const Table = () => {
 
   return (
     <>
-      <div className="input-container">
-        <div className="flex-1 pr-4">
-          <div className="relative md:w-1/3">
-            <input
-              type="search"
-              className="input"
-              placeholder="  Search"
-              onChange={search}
-            />
-            <div className="input__icon">
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
+      <div className="wrap">
+        <h1 className="text-3xl">Mis pedidos</h1>
+
+        <div className="input-container">
+          <div className="flex-1 pr-4">
+            <div className="relative md:w-1/3">
+              <input
+                type="search"
+                className="input"
+                placeholder="  Search"
+                onChange={search}
+              />
+              <div className="input__icon">
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="orders-container">
-        <table className="table">
-          <thead className="table__head">
-            <tr>
-              <th scope="col" className="py-6 px-6">
-                Order code
-              </th>
-              <th scope="col">Quantity Items</th>
-              <th scope="col">Subtotal</th>
-              <th scope="col">Discount</th>
-              <th scope="col">Total</th>
-              <th scope="col">Paid</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody className="table__body">
-            {filteredList.map((order) => {
-              return (
-                <tr key={order.order_code} className="table__body__tr">
-                  <td scope="row" className="table__body__tr__td">
-                    {order.order_code}
-                  </td>
-                  <td className="py-4 px-6">{order.products.length}</td>
-                  <td className="py-4 px-6">{order.subtotal}</td>
-                  <td className="py-4 px-6">{order.discount}</td>
-                  <td className="py-4 px-6">
-                    <span className="table__body__tr__td__total">
-                      {order.total}
-                    </span>
-                  </td>
-                  <td className="py-4 px-6">
-                    {order.paid == 1 ? (
-                      <span className="bg-green-600 table__body__tr__td__paid">
-                        <FontAwesomeIcon icon={faCheck} />
+        <div className="orders-container">
+          <table className="table">
+            <thead className="table__head">
+              <tr>
+                <th scope="col" className="py-6 px-6">
+                  <span className="font-black">Order code</span>
+                </th>
+                <th scope="col">
+                  <span className="font-black">Quantity Items</span>
+                </th>
+                <th scope="col">
+                  <span className="font-black">Subtotal</span>
+                </th>
+                <th scope="col">
+                  <span className="font-black">Discount</span>
+                </th>
+                <th scope="col">
+                  <span className="font-black">Total</span>
+                </th>
+                <th scope="col">
+                  <span className="font-black">Paid</span>
+                </th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody className="table__body">
+              {filteredList.map((order) => {
+                return (
+                  <tr key={order.order_code} className="table__body__tr">
+                    <td scope="row" className="table__body__tr__td">
+                      {order.order_code}
+                    </td>
+                    <td>{order.products.length}</td>
+                    <td>${order.subtotal}</td>
+                    <td>${order.discount}</td>
+                    <td>
+                      <span className="table__body__tr__td__total">
+                        ${order.total}
                       </span>
-                    ) : (
-                      <span className="bg-red-100 table__body__tr__td__paid">
-                        <FontAwesomeIcon icon={faXmark} />
-                      </span>
-                    )}
-                  </td>
-                  <td className="py-4 px-6">
-                    <button
-                      className="table__body__tr__td__button"
-                      onClick={() => detail(order.id)}>
-                      View
-                    </button>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+                    </td>
+                    <td>
+                      {order.paid == 1 ? (
+                        <span className="bg-green-600 table__body__tr__td__paid">
+                          <FontAwesomeIcon icon={faCheck} />
+                        </span>
+                      ) : (
+                        <span className="bg-amber-500 table__body__tr__td__paid">
+                          <FontAwesomeIcon icon={faClock} />
+                        </span>
+                      )}
+                    </td>
+                    <td>
+                      <button
+                        className="table__body__tr__td__button"
+                        onClick={() => detail(order.id)}>
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </div>
     </>
   );
