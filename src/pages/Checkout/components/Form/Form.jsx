@@ -40,11 +40,11 @@ export const Form = () => {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex gap-16">
-          <div className="form w-1/2">
+        <div className="form-container">
+          <div className="form-section">
             <h1 className="text-2xl">Shipping details</h1>
             <div className="input-container">
-              <div className="flex-1 pr-4">
+              <div className="flex-1">
                 <div className="flex gap-5">
                   <div className="form-control">
                     <input
@@ -106,10 +106,10 @@ export const Form = () => {
               </div>
             </div>
           </div>
-          <div className="payment w-1/2">
+          <div className="payment form-section">
             <h1 className="text-2xl">Payment info</h1>
             <div className="input-container">
-              <div className="flex-1 pr-4">
+              <div className="flex-1">
                 <div className="form-control">
                   <input
                     type="text"
@@ -152,8 +152,10 @@ export const Form = () => {
                 </div>
               </div>
             </div>
-            <div className="text-center">
-              <button className="button button-honey" type="submit">
+            <div className="text-center flex justify-center">
+              <button
+                className="button button-honey w-60 flex justify-center"
+                type="submit">
                 Pay now
               </button>
             </div>

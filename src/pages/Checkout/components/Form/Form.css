@@ -1,0 +1,19 @@
+.form-container {
+    @apply gap-16;
+}
+
+.form-section {
+    @apply w-full;
+}
+
+
+@media (min-width: 972px) {
+    .form-container {
+        @apply flex;
+        @apply gap-44;
+    }
+
+    .form-section {
+        @apply w-1/2;
+    }
+}
