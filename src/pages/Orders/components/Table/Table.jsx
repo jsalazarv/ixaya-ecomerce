@@ -42,7 +42,7 @@ export const Table = () => {
 
   return (
     <>
-      <div className="wrap">
+      <div className="wrap wrap-margin">
         <h1 className="text-3xl">Mis pedidos</h1>
 
         <div className="input-container">

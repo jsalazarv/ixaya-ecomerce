@@ -1,8 +1,7 @@
 .services-banner {
-    @apply mx-5;
+    @apply mx-4;
     @apply my-6;
     @apply flex;
-    @apply m-6;
     @apply grid;
     @apply gap-y-6;
     @apply grid-cols-1;
@@ -13,7 +12,6 @@
     @apply flex;
     @apply items-center;
     @apply w-full;
-    @apply px-5;
 }
 
 .benefit__icon {
@@ -44,10 +42,15 @@
         @apply grid-cols-4;
         @apply my-16;
     }
+
+    .services-banner__benefit {
+        @apply px-5;
+    }
 }
 @media (min-width: 1280px) {
 
 }
+
 @media (min-width: 1536px) {
 
 }
