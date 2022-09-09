@@ -1,5 +1,5 @@
 .wrap {
-    margin: 5rem 12rem;
+    margin: 5rem 1rem;
 }
 
 .input-container {
@@ -41,7 +41,7 @@
     @apply relative;
     @apply my-4;
     @apply flex;
-    @apply justify-center;
+    @apply justify-start;
     border-radius: 5px;
 }
 
@@ -107,4 +107,29 @@
     @apply rounded-md;
     @apply shadow;
     @apply hover:bg-gray-800;
+}
+
+@media (min-width: 768px) {
+    .wrap {
+        margin: 5rem 2rem;
+    }
+    .orders-container {
+        @apply justify-center;
+    }
+}
+@media (min-width: 1024px) {
+    .wrap {
+        margin: 5rem 4rem;
+    }
+}
+@media (min-width: 1280px) {
+    .wrap {
+        margin: 5rem 8rem;
+    }
+}
+@media (min-width: 1536px) {
+    .wrap {
+        margin: 5rem 12rem;
+    }
+
 }

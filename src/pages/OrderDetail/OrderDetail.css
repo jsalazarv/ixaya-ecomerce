@@ -1,6 +1,22 @@
 .order-details {
     @apply my-12;
-    @apply flex;
-    @apply justify-between;
-    flex: 0.5;
+}
+
+@media (min-width: 768px) {
+    .order-details {
+        @apply flex;
+        @apply justify-between;
+        flex: 0.5;
+    }
+
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1280px) {
+
+}
+@media (min-width: 1536px) {
+
+
 }

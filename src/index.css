@@ -9,6 +9,8 @@
 @import "components/BillingDetails/BillingDetails.css";
 @import "pages/Checkout/Checkout.css";
 @import "pages/BestSeller/BestSeller.css";
+@import "components/Navbar/Navbar.css";
+@import "pages/Checkout/components/Form/Form.css";
 
 @tailwind base;
 @tailwind components;

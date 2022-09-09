@@ -1,6 +1,3 @@
-import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 export const Card = ({
   image = '',
   category,
@@ -13,22 +10,19 @@ export const Card = ({
   return (
     <>
       <div className={`card ${color}`}>
-        <div className="button">
-          <button className="card__content_info_price" onClick={onClickAdd}>
-            <FontAwesomeIcon className="text-black text-2xl" icon={faPlus} />
-          </button>
-          <button className="card__content_info_price" onClick={onClickRemove}>
-            <FontAwesomeIcon className="text-black text-2xl" icon={faMinus} />
-          </button>
-        </div>
         <div className="card__header">
-          <img className="card_header_image" src={image} alt="" />
+          <img className="card__header__image" src={image} alt="" />
         </div>
         <div className="card__content">
           <span className="card__content_category">{category}</span>
           <div className="card__content_info">
             <span className="card__content_info_title">{title}</span>
+          </div>
+          <div className="button">
             <span className="card__content_info_price">{price}</span>
+            <button className="card__content_info_price" onClick={onClickAdd}>
+              Buy
+            </button>
           </div>
         </div>
       </div>
