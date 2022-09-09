@@ -13,9 +13,49 @@
 /*Cards lg*/
 
 .row-left .item:first-child .card {
-    display: flex;
+    display: block;
 }
 
 .row-right  .item:last-child .card {
-    display: flex;
+    display: block;
+}
+
+.row-left  .item .card .card__content_info_description {
+    display: none;
+}
+
+
+.row-right  .item .card .card__content_info_description {
+    display: none;
+}
+
+.row-left  .item:first-child .card .card__content_info_description {
+    display: block;
+}
+
+.row-right  .item:last-child .card .card__content_info_description {
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .row-left .item:first-child .card {
+        display: flex;
+        align-items: center;
+    }
+
+    .row-right  .item:last-child .card {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1280px) {
+
+}
+@media (min-width: 1536px) {
+
+
 }
