@@ -62,12 +62,21 @@ export const Navbar = () => {
               </li>
             </ul>
 
-            <div className="mt-3 space-y-2 login">
+            <div className="mt-3 space-y-2 login dropdown">
               <a
                 href="#"
-                className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800">
-                Sign in
+                className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800 dropdown">
+                Profile
               </a>
+              <ul className="dropdown-menu absolute hidden text-gray-700 pt-2 ">
+                <li className="">
+                  <a
+                    className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="/orders">
+                    My Orders
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -79,11 +88,22 @@ export const Navbar = () => {
             />
             <span className="text-black">{totalCartItems}</span>
           </a>
-          <a
-            href="#"
-            className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800">
-            Sign in
-          </a>
+          <div className="dropdown inline-block relative">
+            <a
+              href="#"
+              className="px-8 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800 dropdown">
+              Profile
+            </a>
+            <ul className="dropdown-menu absolute hidden text-gray-700 pt-2 ">
+              <li className="">
+                <a
+                  className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="/orders">
+                  My Orders
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
