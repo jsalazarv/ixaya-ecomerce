@@ -20,7 +20,7 @@ export const Navbar = () => {
             <a href="/">
               <h2 className="text-2xl font-bold text-red-100">LOGO</h2>
             </a>
-            <a className="md:hidden" href="/checkout">
+            <a className="md:hidden flex items-center" href="/checkout">
               <FontAwesomeIcon
                 className="text-black text-2xl mr-4"
                 icon={faCartShopping}
@@ -89,8 +89,8 @@ export const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="hidden space-x-2 md:inline-block flex items-center">
-          <a href="/checkout">
+        <div className="hidden space-x-2 md:flex">
+          <a href="/checkout" className="flex items-center">
             <FontAwesomeIcon
               className="text-black text-2xl mr-4"
               icon={faCartShopping}

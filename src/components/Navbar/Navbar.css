@@ -18,10 +18,14 @@ nav{
     @apply bg-red-500;
     @apply relative;
     @apply rounded-full;
-    @apply p-1;
     @apply text-xs;
-    top: -18px;
-    left: -1rem;
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+    top: -10px;
+    left: -20px;
+    height: 20px;
+    width: 20px;
 }
 
 @media (min-width: 768px) {
