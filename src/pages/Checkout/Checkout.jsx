@@ -16,7 +16,7 @@ export const Checkout = () => {
 
   return (
     <FormProvider {...methods}>
-      <div className="wrap">
+      <div className="wrap wrap-margin">
         <h1 className="text-3xl mb-12">Checkout</h1>
 
         <h1 className="text-2xl">Products</h1>

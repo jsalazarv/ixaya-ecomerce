@@ -1,8 +1,8 @@
 .promotion-banner {
     @apply bg-red-100;
     @apply rounded-3xl;
-    @apply p-16;
-    @apply m-6;
+    @apply p-4;
+    @apply m-4;
     justify-content: space-between;
     margin-top: 5rem;
 }
@@ -34,7 +34,7 @@
 .promotion-banner__image {
     width: 13rem;
     position: absolute;
-    transform: translate(50%, -275%);
+    transform: translate(35%, -250%);
 }
 
 @media (min-width: 768px) {
@@ -72,6 +72,7 @@
 @media (min-width: 1280px) {
     .promotion-banner {
         margin-top: 9rem;
+        padding: 4rem;
     }
     .promotion-banner__title {
         @apply text-5xl;
