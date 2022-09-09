@@ -62,7 +62,7 @@ export const Navbar = () => {
               </li>
             </ul>
 
-            <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+            <div className="mt-3 space-y-2 login">
               <a
                 href="#"
                 className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800">
