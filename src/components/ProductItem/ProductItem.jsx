@@ -1,4 +1,17 @@
-export const ProductItem = ({ product = {} }) => {
+import {
+  addItem,
+  deleteCheckoutItem,
+  removeItem,
+} from '../../store/cart/index.js';
+import { useDispatch } from 'react-redux';
+
+export const ProductItem = ({
+  product = {},
+  incrementable = false,
+  deletable = false,
+}) => {
+  const dispatch = useDispatch();
+
   return (
     <div className="product-container">
       <div className="image-container">
@@ -9,7 +22,13 @@ export const ProductItem = ({ product = {} }) => {
         <p>{product.short_description}</p>
         <p>
           Quantity:
+          {incrementable && (
+            <button onClick={() => dispatch(removeItem(product))}>-</button>
+          )}
           <span>{product.qty}</span>
+          {incrementable && (
+            <button onClick={() => dispatch(addItem(product))}>+</button>
+          )}
         </p>
         <p>
           Unit price:
@@ -21,6 +40,12 @@ export const ProductItem = ({ product = {} }) => {
         </p>
       </div>
       <div className="product__info">
+        {deletable && (
+          <button onClick={() => dispatch(deleteCheckoutItem(product))}>
+            delete
+          </button>
+        )}
+
         <p>
           Subtotal:
           <span>${product.total}</span>
