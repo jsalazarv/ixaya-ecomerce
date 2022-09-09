@@ -20,6 +20,15 @@ export const Navbar = () => {
             <a href="/">
               <h2 className="text-2xl font-bold text-red-100">LOGO</h2>
             </a>
+            <a className="md:hidden" href="/checkout">
+              <FontAwesomeIcon
+                className="text-black text-2xl mr-4"
+                icon={faCartShopping}
+              />
+              {totalCartItems !== 0 && (
+                <span className="cart-counter">{totalCartItems}</span>
+              )}
+            </a>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none"
@@ -86,7 +95,9 @@ export const Navbar = () => {
               className="text-black text-2xl mr-4"
               icon={faCartShopping}
             />
-            <span className="text-black">{totalCartItems}</span>
+            {totalCartItems !== 0 && (
+              <span className="cart-counter">{totalCartItems}</span>
+            )}
           </a>
           <div className="dropdown inline-block relative">
             <a

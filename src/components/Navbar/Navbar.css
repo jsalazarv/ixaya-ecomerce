@@ -13,6 +13,17 @@ nav{
     display: block;
 }
 
+.cart-counter {
+    @apply text-white;
+    @apply bg-red-500;
+    @apply relative;
+    @apply rounded-full;
+    @apply p-1;
+    @apply text-xs;
+    top: -18px;
+    left: -1rem;
+}
+
 @media (min-width: 768px) {
     .login{
         @apply hidden;
