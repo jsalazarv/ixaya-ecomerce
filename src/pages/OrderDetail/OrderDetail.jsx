@@ -1,6 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { OrderService } from '../../services/OrderService.js';
+import { ProductItem } from '../../components/ProductItem/ProductItem';
+import { ShippingDetails } from '../../components/ShippingDetails/ShippingDetails';
+import { BillingDetails } from '../../components/BillingDetails/BillingDetails';
 
 export const OrderDetail = () => {
   const params = useParams();
@@ -36,60 +39,24 @@ export const OrderDetail = () => {
       <div className="wrap">
         <h1 className="text-3xl">Order details: {orderDetail.order_code}</h1>
 
-        <div className="shipping-details">
-          <div>
-            <h1 className="text-2xl mb-2">Shipping details</h1>
-            <p>{orderDetail.address}</p>
-            <p>
-              {orderDetail.city}, {orderDetail.state}, {orderDetail.zip_code}
-            </p>
-            <p>Phone: {orderDetail.phone}</p>
-          </div>
-          <div className="order-billing">
-            <p className="billing-row">
-              Subtotal:
-              <span>${orderDetail.subtotal}</span>
-            </p>
-            <p className="billing-row discount">
-              Discount:
-              <span>- ${orderDetail.discount}</span>
-            </p>
-            <h1 className="billing-row">
-              Total:
-              <span>${orderDetail.total}</span>
-            </h1>
-          </div>
+        <div className="order-details">
+          <ShippingDetails
+            address={orderDetail.address}
+            city={orderDetail.city}
+            state={orderDetail.state}
+            zipCode={orderDetail.zip_code}
+            phone={orderDetail.phone}
+          />
+          <BillingDetails
+            subtotal={orderDetail.subtotal}
+            discount={orderDetail.discount}
+            total={orderDetail.total}
+          />
         </div>
 
         <h1 className="text-2xl">Products</h1>
         {orderDetail.products.map((product, index) => (
-          <div className="product-container" key={`item-${index}`}>
-            <div className="image-container">
-              <img className="product__image" src={product.image_url} alt="" />
-            </div>
-            <div className="product__body">
-              <h2 className="product__body__title">{product.title}</h2>
-              <p>{product.short_description}</p>
-              <p>
-                Quantity:
-                <span>{product.qty}</span>
-              </p>
-              <p>
-                Unit price:
-                <span>${product.price}</span>
-              </p>
-              <p>
-                Discount:
-                <span className="discount">- ${product.discount}</span>
-              </p>
-            </div>
-            <div className="product__info">
-              <p>
-                Subtotal:
-                <span>${product.total}</span>
-              </p>
-            </div>
-          </div>
+          <ProductItem product={product} key={`item-${index}`} />
         ))}
       </div>
     </>

@@ -1,0 +1,24 @@
+.billing-details {
+    @apply flex-col;
+    min-width: 200px;
+}
+
+.billing-details span {
+    @apply font-semibold;
+}
+
+.billing-details h1 {
+    @apply border-t-2;
+    @apply mt-3;
+    @apply pt-3;
+    @apply text-2xl;
+}
+
+.billing-details h1 span {
+    @apply font-extrabold;
+}
+
+.billing-row {
+    @apply flex;
+    @apply justify-between;
+}
