@@ -4,10 +4,18 @@ export const Card = ({
   title,
   price,
   color = 'bg_gradient_shark',
+  onClickAdd = () => null,
+  onClickRemove = () => null,
 }) => {
   return (
     <>
       <div className={`card ${color}`}>
+        <button className="card__content_info_price" onClick={onClickAdd}>
+          AddItem
+        </button>
+        <button className="card__content_info_price" onClick={onClickRemove}>
+          removeItem
+        </button>
         <div className="card__header">
           <img className="card_header_image" src={image} alt="" />
         </div>

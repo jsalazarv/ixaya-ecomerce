@@ -2,6 +2,8 @@ import { ProductService } from '../../../../services/ProductService.js';
 import { Card } from '../../../../components/Card/Card.jsx';
 import { useEffect, useState } from 'react';
 import { chunk } from '../../../../utilities/arrays.js';
+import { useDispatch } from 'react-redux';
+import { addItem, removeItem } from '../../../../store/cart/index.js';
 
 const productService = new ProductService();
 
@@ -17,6 +19,7 @@ const colors = [
 export const Products = () => {
   let colorIndex = 0;
   const [productList, setProductList] = useState([]);
+  const dispatch = useDispatch();
 
   const fetchProducts = async () => {
     const {
@@ -58,6 +61,8 @@ export const Products = () => {
                       category={product.category}
                       title={product.title}
                       price={`$\`${product.price}\``}
+                      onClickAdd={() => dispatch(addItem(product))}
+                      onClickRemove={() => dispatch(removeItem(product))}
                     />
                   </div>
                 );
