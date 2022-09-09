@@ -4,6 +4,7 @@
 @import "pages/Home/components/PromotionBanner/PromotionBanner.css";
 @import "components/Card/Card.css";
 @import "pages/Orders/components/Table/Table.css";
+@import "pages/OrderDetail/OrderDetail.css";
 
 @tailwind base;
 @tailwind components;
