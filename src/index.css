@@ -3,6 +3,7 @@
 @import "pages/Home/components/ServicesBanner/ServicesBanner.css";
 @import "pages/Home/components/PromotionBanner/PromotionBanner.css";
 @import "components/Card/Card.css";
+@import "pages/Orders/components/Table/Table.css";
 
 @tailwind base;
 @tailwind components;
