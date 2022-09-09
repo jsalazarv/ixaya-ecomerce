@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .banner {
-    @apply m-4;
     @apply overflow-hidden;
     @apply rounded-3xl;
     @apply flex;
     @apply justify-center;
+    margin: 0.5rem;
     height: 75vh;
     background: linear-gradient(90deg, #9A9A9A 0%, #E5E5E5 50%);
 }
@@ -18,6 +18,7 @@
 
 .banner__content__title {
     @apply font-extrabold;
+    @apply text-white;
     font-size: 2rem;
     line-height: 3rem;
 }
@@ -35,10 +36,10 @@
 }
 
 .banner__content__image {
-    width: 24rem;
+    width: 19rem;
     position: absolute;
-    left: 2rem;
-    top: 13rem;
+    left: 1rem;
+    top: 19rem;
     transform: translate(-50%, -50%);
     animation: float 4s ease-in-out infinite;
 }
@@ -80,10 +81,10 @@
     }
 
     .banner__content__image {
-        width: 25rem;
+        width: 20rem;
         position: absolute;
-        left: 20rem;
-        top: 6rem;
+        left: 27rem;
+        top: 10rem;
         transform: translate(-50%, -50%);
         animation: float 4s ease-in-out infinite;
     }
@@ -110,10 +111,10 @@
     }
 
     .banner__content__image {
-        width: 35rem;
+        width: 30rem;
         position: absolute;
-        left: 18rem;
-        top: 4rem;
+        left: 26rem;
+        top: 13rem;
     }
 
 }
@@ -149,7 +150,7 @@
     .banner__content__image {
         width: 50rem;
         position: absolute;
-        left: 30rem;
+        left: 35rem;
         top: 5rem;
     }
 }
