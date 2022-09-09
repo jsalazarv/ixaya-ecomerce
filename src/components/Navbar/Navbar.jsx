@@ -5,8 +5,11 @@ import {
   faCartShopping,
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
+import { useSelector } from 'react-redux';
+import { countCartItems } from '../../store/cart/selectors.js';
 
 export const Navbar = () => {
+  const totalCartItems = useSelector(countCartItems);
   const [navbar, setNavbar] = useState(false);
 
   return (
@@ -74,6 +77,7 @@ export const Navbar = () => {
               className="text-black text-2xl mr-4"
               icon={faCartShopping}
             />
+            <span className="text-black">{totalCartItems}</span>
           </a>
           <a
             href="#"
