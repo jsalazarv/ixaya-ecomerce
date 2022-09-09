@@ -8,6 +8,11 @@ nav{
 .login{
     @apply block;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 @media (min-width: 768px) {
     .login{
         @apply hidden;
