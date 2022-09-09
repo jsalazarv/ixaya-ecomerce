@@ -24,6 +24,11 @@
     @apply items-center;
     @apply justify-center;
 }
+.button{
+    @apply p-4;
+    @apply flex;
+    @apply justify-between;
+}
 
 .card__header__image {
     @apply relative;
