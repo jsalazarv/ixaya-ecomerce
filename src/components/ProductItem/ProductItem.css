@@ -16,7 +16,6 @@
 }
 
 .product__body {
-    @apply pr-12;
     @apply pl-2;
 }
 
@@ -71,5 +70,6 @@
 @media (min-width: 1200px) {
     .product__body {
         flex: 1;
+        @apply pr-12;
     }
 }
