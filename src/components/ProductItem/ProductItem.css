@@ -16,7 +16,6 @@
 }
 
 .product__body {
-    @apply pl-2;
 }
 
 .product__body span {
@@ -32,8 +31,6 @@
 }
 
 .product__info {
-    @apply px-2;
-    @apply flex;
     @apply items-end;
     @apply justify-start;
 }
@@ -60,6 +57,15 @@
 
 .counter__qty {
     @apply mx-3;
+}
+
+.delete-item {
+    @apply flex;
+    @apply justify-end;
+}
+
+.delete-item .icon:hover {
+    @apply text-red-500;
 }
 
 @media (min-width: 768px) {
@@ -89,5 +95,10 @@
     .product__body {
         flex: 1;
         @apply pr-12;
+    }
+
+
+    .product__info {
+        @apply flex;
     }
 }
