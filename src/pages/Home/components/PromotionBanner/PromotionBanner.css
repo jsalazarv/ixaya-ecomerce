@@ -1,5 +1,4 @@
 .promotion-banner {
-    @apply bg-red-100;
     @apply rounded-3xl;
     @apply p-4;
     justify-content: space-between;
@@ -31,9 +30,11 @@
 }
 
 .promotion-banner__image {
-    width: 13rem;
     position: absolute;
     transform: translate(35%, -250%);
+    left: 1rem;
+    top: 6rem;
+    width: 15rem;
 }
 
 @media (min-width: 768px) {
@@ -45,15 +46,15 @@
     }
     .promotion-banner__image {
         width: 18rem;
-        left: 25%;
-        transform: translate(50%, -160%);
+        left: 13rem;
+        top: 18rem;
     }
 }
 @media (min-width: 1024px) {
     .promotion-banner {
         @apply flex;
+        @apply mb-16;
         justify-content: space-between;
-        margin-top: 4rem;
     }
     .promotion-banner__title {
         @apply text-4xl;
@@ -63,14 +64,17 @@
         flex: 1.2;
     }
     .promotion-banner__image {
-        width: 15rem;
-        left: 33%;
         transform: translate(-50%, -50%);
+        position: relative;
+        left: 17rem;
+        top: 3rem;
+        width: 15rem;
     }
 }
+
 @media (min-width: 1280px) {
     .promotion-banner {
-        margin-top: 9rem;
+        margin-top: 12rem;
         padding: 4rem;
     }
     .promotion-banner__title {
@@ -79,15 +83,33 @@
 
     .promotion-banner__image {
         width: 20rem;
+        left: 20rem;
+        top: 0;
     }
-
-
 }
+
+@media (min-width: 1400px) {
+    .promotion-banner__image {
+        width: 20rem;
+        left: 22rem;
+        top: 0;
+    }
+}
+
 @media (min-width: 1536px) {
     .promotion-banner__title {
         @apply text-6xl;
     }
     .promotion-banner__image {
         width: 22rem;
+        left: 26rem;
+    }
+}
+
+
+@media (min-width: 1700px) {
+    .promotion-banner__image {
+        width: 25rem;
+        left: 29rem;
     }
 }

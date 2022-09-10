@@ -1,9 +1,7 @@
-import imageBanner from '../../../../assets/images/home/headphone-banner.png';
-
-export const PromotionBanner = () => {
+export const PromotionBanner = ({ color = 'bg-red-100', image = '' }) => {
   return (
     <>
-      <div className="promotion-banner">
+      <div className={`promotion-banner ${color}`}>
         <div className="promotion-banner__title">
           <h2>LOREM</h2>
           <h2>IPSUM</h2>
@@ -25,7 +23,9 @@ export const PromotionBanner = () => {
             SHOP
           </button>
         </div>
-        <img className="promotion-banner__image" src={imageBanner} alt="" />
+        <div className="relative lg:absolute">
+          <img className="promotion-banner__image" src={image} alt="" />
+        </div>
       </div>
     </>
   );
