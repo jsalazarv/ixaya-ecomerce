@@ -1,7 +1,4 @@
-.wrap {
-    @apply pt-24;
-    margin: 0rem 1rem;
-}
+.wrap {}
 
 .input-container {
     @apply mb-4;
@@ -111,18 +108,11 @@
 }
 
 @media (min-width: 768px) {
-    .wrap {
-        margin: 0 1rem 5rem 1rem;
-    }
     .orders-container {
         @apply justify-center;
     }
 }
 
 
-@media (min-width: 1024px) {
-    .wrap-margin {
-        margin: 1rem 10rem !important;
-    }
-}
+@media (min-width: 1024px) {}
 

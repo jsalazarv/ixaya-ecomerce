@@ -20,12 +20,14 @@ function App() {
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/orders" element={<Orders />} />
-            <Route path="/orders/:id" element={<OrderDetail />} />
-            <Route path="/checkout" element={<Checkout />} />
-          </Routes>
+          <div className="general-container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/orders" element={<Orders />} />
+              <Route path="/orders/:id" element={<OrderDetail />} />
+              <Route path="/checkout" element={<Checkout />} />
+            </Routes>
+          </div>
           <Footer phrase="Coded with" />
         </BrowserRouter>
       </PersistGate>
