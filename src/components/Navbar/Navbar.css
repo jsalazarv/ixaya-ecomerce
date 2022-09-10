@@ -5,6 +5,10 @@ nav{
     @apply z-50;
 }
 
+.logo {
+    max-width: 65px;
+}
+
 .login{
     @apply block;
 }

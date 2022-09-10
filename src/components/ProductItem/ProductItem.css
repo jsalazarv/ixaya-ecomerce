@@ -16,12 +16,10 @@
 }
 
 .product__body {
-    @apply pl-2;
 }
 
 .product__body span {
     @apply font-semibold;
-    @apply ml-2;
 }
 
 .discount {
@@ -33,8 +31,6 @@
 }
 
 .product__info {
-    @apply px-2;
-    @apply flex;
     @apply items-end;
     @apply justify-start;
 }
@@ -42,6 +38,34 @@
 .product__info span {
     @apply font-extrabold;
     @apply ml-2;
+}
+
+.counter__button {
+    @apply text-white;
+    @apply bg-gray-800;
+    @apply hover:bg-gray-700;
+    @apply font-medium;
+    @apply rounded-full;
+    @apply text-sm;
+    @apply p-2;
+    @apply inline-flex;
+    @apply justify-center;
+    @apply items-center;
+    width: 25px;
+    height: 25px;
+}
+
+.counter__qty {
+    @apply mx-3;
+}
+
+.delete-item {
+    @apply flex;
+    @apply justify-end;
+}
+
+.delete-item .icon:hover {
+    @apply text-red-500;
 }
 
 @media (min-width: 768px) {
@@ -71,5 +95,10 @@
     .product__body {
         flex: 1;
         @apply pr-12;
+    }
+
+
+    .product__info {
+        @apply flex;
     }
 }
