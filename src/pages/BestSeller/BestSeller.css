@@ -37,10 +37,22 @@
 
 .bestseller__content .card .card__content {
     height: 8rem;
+    @apply px-0;
 }
 
 .bestseller__content .card .card__header .card__header__image {
     height: 130px;
+}
+
+.bestseller__content .card__content_info_title {
+    @apply truncate;
+}
+
+.bestseller__content .button {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {}
