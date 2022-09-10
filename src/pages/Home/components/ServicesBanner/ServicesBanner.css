@@ -1,5 +1,4 @@
 .services-banner {
-    @apply mx-4;
     @apply my-6;
     @apply flex;
     @apply grid;

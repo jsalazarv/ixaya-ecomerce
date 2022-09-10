@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'BeyondTheMountains';
+    src: local('BeyondTheMountains'), url(./src/assets/fonts/beyond_the_mountains/beyond_the_mountains.otf) format('woff');
+}
+
+.footer {
+    @apply bg-black;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply p-5;
+    @apply text-red-100;
+    font-family: 'BeyondTheMountains', serif;
+}
+
+.footer span {
+    @apply ml-1;
+}
