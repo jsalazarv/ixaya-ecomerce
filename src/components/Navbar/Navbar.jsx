@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from 'react-redux';
 import { countCartItems } from '../../store/cart/selectors.js';
+import logo from '../../assets/images/logo_ixaya.png';
 
 export const Navbar = () => {
   const totalCartItems = useSelector(countCartItems);
@@ -18,7 +19,7 @@ export const Navbar = () => {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="/">
-              <h2 className="text-2xl font-bold text-red-100">LOGO</h2>
+              <img className="logo" src={logo} alt="" />
             </a>
             <a className="md:hidden flex items-center" href="/checkout">
               <FontAwesomeIcon
