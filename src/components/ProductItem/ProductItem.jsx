@@ -4,6 +4,8 @@ import {
   removeItem,
 } from '../../store/cart/index.js';
 import { useDispatch } from 'react-redux';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const ProductItem = ({
   product = {},
@@ -23,13 +25,21 @@ export const ProductItem = ({
         <div className="mt-3">
           <div className="flex justify-between">
             <div>Quantity:</div>
-            <div>
+            <div className="counter">
               {incrementable && (
-                <button onClick={() => dispatch(removeItem(product))}>-</button>
+                <button
+                  className="counter__button"
+                  onClick={() => dispatch(removeItem(product))}>
+                  <FontAwesomeIcon icon={faMinus} />
+                </button>
               )}
-              <span>{product.qty}</span>
+              <span className="counter__qty">{product.qty}</span>
               {incrementable && (
-                <button onClick={() => dispatch(addItem(product))}>+</button>
+                <button
+                  className="counter__button"
+                  onClick={() => dispatch(addItem(product))}>
+                  <FontAwesomeIcon icon={faPlus} />
+                </button>
               )}
             </div>
           </div>
