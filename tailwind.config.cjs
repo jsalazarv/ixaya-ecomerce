@@ -15,6 +15,9 @@ module.exports = {
                 },
                 red: {
                     100: "#EA2A35"
+                },
+                green: {
+                    100: "#2DC36A"
                 }
             },
         },
