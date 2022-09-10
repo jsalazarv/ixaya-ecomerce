@@ -50,7 +50,9 @@
     }
 }
 @media (min-width: 1024px) {
-
+    .iterated-container {
+        @apply w-full flex md:gap-2 md:grid-cols-3;
+    }
 }
 @media (min-width: 1280px) {
 

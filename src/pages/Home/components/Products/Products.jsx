@@ -47,9 +47,7 @@ export const Products = () => {
           const isPar = index % 2 === 0;
           const rowClass = isPar ? 'row-right' : 'row-left';
           return (
-            <div
-              key={index}
-              className={`mb-8 p-2 w-full flex flex-wrap bg-grey-light ${rowClass}`}>
+            <div key={index} className={`iterated-container ${rowClass}`}>
               {row.map((product) => {
                 const color = getColor(colors, colorIndex);
                 colorIndex = color.nextIndex;

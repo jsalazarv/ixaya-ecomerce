@@ -103,10 +103,9 @@
 
 @media (min-width: 1024px) {
     .banner {
-        @apply mx-6;
         @apply mb-6;
         @apply mt-0;
-        height: 90vh;
+        height: 60vh;
     }
 
     .banner__content__title {
@@ -133,6 +132,10 @@
 }
 
 @media (min-width: 1280px) {
+    .banner {
+        height: 90vh;
+    }
+
     .banner__content__title {
         font-size: 10em;
         line-height: 12rem;

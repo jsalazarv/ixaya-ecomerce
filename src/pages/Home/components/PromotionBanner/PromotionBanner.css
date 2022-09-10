@@ -2,9 +2,8 @@
     @apply bg-red-100;
     @apply rounded-3xl;
     @apply p-4;
-    @apply m-4;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-top: 9rem;
 }
 
 .promotion-banner__title {
