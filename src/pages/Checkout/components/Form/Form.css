@@ -6,6 +6,15 @@
     @apply w-full;
 }
 
+.form-control input {
+    @apply mb-1;
+}
+
+.form-control span {
+    @apply text-red-100;
+    @apply font-semibold;
+}
+
 
 @media (min-width: 972px) {
     .form-container {
