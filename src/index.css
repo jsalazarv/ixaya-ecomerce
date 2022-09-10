@@ -51,10 +51,18 @@ body {
   .general-container {
     @apply mx-8;
   }
+
+  .wrap {
+    @apply mx-16;
+  }
 }
 @media (min-width: 1200px) {
   .general-container {
     @apply mx-10;
+  }
+
+  .wrap {
+    @apply mx-56;
   }
 }
 @media (min-width: 1730px) {}

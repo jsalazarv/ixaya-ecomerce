@@ -1,5 +1,3 @@
-.wrap {}
-
 .input-container {
     @apply mb-4;
     @apply flex;

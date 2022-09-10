@@ -20,24 +20,28 @@ export const ProductItem = ({
       <div className="product__body">
         <h2 className="product__body__title">{product.title}</h2>
         <p>{product.short_description}</p>
-        <p>
-          Quantity:
-          {incrementable && (
-            <button onClick={() => dispatch(removeItem(product))}>-</button>
-          )}
-          <span>{product.qty}</span>
-          {incrementable && (
-            <button onClick={() => dispatch(addItem(product))}>+</button>
-          )}
-        </p>
-        <p>
-          Unit price:
-          <span>${product.price}</span>
-        </p>
-        <p>
-          Discount:
-          <span className="discount">- ${product.discount}</span>
-        </p>
+        <div className="mt-3">
+          <div className="flex justify-between">
+            <div>Quantity:</div>
+            <div>
+              {incrementable && (
+                <button onClick={() => dispatch(removeItem(product))}>-</button>
+              )}
+              <span>{product.qty}</span>
+              {incrementable && (
+                <button onClick={() => dispatch(addItem(product))}>+</button>
+              )}
+            </div>
+          </div>
+          <div className="flex justify-between">
+            Unit price:
+            <span>${product.price}</span>
+          </div>
+          <div className="flex justify-between">
+            Discount:
+            <span className="discount">- ${product.discount}</span>
+          </div>
+        </div>
       </div>
       <div className="product__info">
         {deletable && (
@@ -46,10 +50,10 @@ export const ProductItem = ({
           </button>
         )}
 
-        <p>
+        <div className="flex justify-between">
           Subtotal:
           <span>${product.total}</span>
-        </p>
+        </div>
       </div>
     </div>
   );
