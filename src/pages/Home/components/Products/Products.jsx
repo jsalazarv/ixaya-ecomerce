@@ -42,6 +42,10 @@ export const Products = () => {
 
   return (
     <>
+      <div className="products-title-container">
+        <h2 className="products__title">NEW PRODUCTS</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
       <div className="mb-8 w-full flex flex-col">
         {productList.map((row, index) => {
           const isPar = index % 2 === 0;
