@@ -48,7 +48,7 @@
     @apply truncate;
 }
 
-.bestseller__content .button {
+.bestseller__content .button-container {
     width: 100%;
     justify-content: space-between;
     padding: 1rem 0;

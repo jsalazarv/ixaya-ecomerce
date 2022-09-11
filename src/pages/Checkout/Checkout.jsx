@@ -24,7 +24,7 @@ export const Checkout = () => {
               <img className="w-60 rounded-3xl" src={emptyCartImage} alt="" />
             </div>
             <div className="text-center mt-3">
-              <a className="button button-honey text-center" href="/">
+              <a className="button-container button-honey text-center" href="/">
                 Pus compra algo, ¿no?
               </a>
             </div>
