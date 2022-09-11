@@ -1,6 +1,7 @@
 .promotion-banner {
     @apply rounded-3xl;
     @apply p-4;
+    @apply mb-12;
     justify-content: space-between;
     margin-top: 9rem;
 }
