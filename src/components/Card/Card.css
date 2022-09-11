@@ -11,39 +11,39 @@
     @apply rounded-3xl;
     @apply shadow-lg;
     @apply border-2;
-    @apply p-10;
-    min-height: 22rem;
+    @apply p-6;
+    height: 25rem;
 }
 
 .card__header {
     @apply flex;
     @apply items-center;
     @apply justify-center;
-    height: 200px;
     @apply items-center;
     padding: 25px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 0 100px -25px rgb(33 32 32 / 83%);
     flex: 1;
+    height: 50%;
 }
 
-.button{
-    @apply p-4;
+.button-container {
     @apply flex;
     @apply justify-between;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .card__header__image {
     @apply relative;
-    height: 180px;
+    height: 100%;
     width: auto;
 }
 
 .card__content {
     @apply relative;
     @apply text-white;
-    @apply px-6;
     @apply pb-6 mt-6;
     flex: 1;
 }
@@ -108,10 +108,10 @@
     @apply bg-gradient-to-r from-blue-600 to-blue-400
 }
 
-
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .card {
         min-height: 25rem;
+        display: flex;
     }
 
     .card__content_info_description {
@@ -119,18 +119,60 @@
     }
 
     .card__header {
-        height: 250px;
+        height: 100%;
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        min-height: 15rem;
+        height: 15rem;
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .card__content {
+        margin-top: 0;
+    }
+
+    .card__content_category {
+        font-size: 1rem;
+    }
+
+    .card__content_info_title {
+        font-size: 1rem;
+    }
+
+    .card__content_info_description {
+        display: block;
+    }
+
+    .card__header {
+        height: 50%;
+        padding: 1rem;
     }
 }
 
 
 @media (min-width: 1200px) {
+    .card {
+        min-height: 17rem;
+        padding: 1.5rem;
+    }
+
     .card__header {
-        height: 250px;
+        height: 50%;
     }
 
     .card__header__image {
         @apply relative;
         width: auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    .card {
+        min-height: 24rem;
     }
 }

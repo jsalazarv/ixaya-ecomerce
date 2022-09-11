@@ -154,7 +154,7 @@ export const Form = () => {
             </div>
             <div className="text-center flex justify-center">
               <button
-                className="button button-honey w-60 flex justify-center"
+                className="button-container button-honey w-60 flex justify-center"
                 type="submit">
                 Pay now
               </button>
